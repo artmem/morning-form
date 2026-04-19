@@ -108,6 +108,22 @@ body{font-family:'DM Sans',sans-serif;font-weight:300;background:#0C0C0C;color:#
 .s-linen .title{font-size:clamp(2.5rem,6vw,4.5rem)}
 .s-parchment .num{font-style:italic}
 
+/* ── Image spreads ── */
+.has-image{position:relative;overflow:hidden}
+.img-bg{
+  position:absolute;inset:0;
+  background-size:cover;background-position:center;
+  z-index:0;
+}
+.img-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.78) 35%,rgba(0,0,0,0.45) 60%,rgba(0,0,0,0.15) 100%);
+  z-index:1;
+}
+.has-image .inner{position:relative;z-index:2}
+.has-image .title a{color:#F0EDE6}
+.has-image .summary{opacity:0.85}
+
 /* ── Footer ── */
 .footer{
   background:#0C0C0C;
@@ -143,20 +159,24 @@ body{font-family:'DM Sans',sans-serif;font-weight:300;background:#0C0C0C;color:#
   </div>
 </header>
 
-<section class="spread s-hero" style="background:#F5F0E8;color:#111111">
+<section class="spread s-hero has-image" style="color:#F0EDE6">
+  <div class="img-bg" style="background-image:url('https://admin.itsnicethat.com/images/8s-W9RskiT2-B368Ryg606A5an0=/277228/width-1440%7Cformat-jpeg/RC_100_envelope_banner__emboss.format-webp.width-2880_khfP3IvUK8CQDBWX.png')"></div>
+  <div class="img-overlay"></div>
   <div class="inner">
     <div class="meta">
       <span class="num" style="color:#C8372D">01</span>
       <span class="src">It&#x27;s Nice That</span>
     </div>
     <h2 class="title">
-      <a href="https://www.itsnicethat.com/features/risotto-riso-club-graphic-design-spotlight-080426" target="_blank" rel="noopener" style="color:#111111">The joy and power of Risograph: Risotto showcases 400 printed postcards from artists across the globe</a>
+      <a href="https://www.itsnicethat.com/features/risotto-riso-club-graphic-design-spotlight-080426" target="_blank" rel="noopener" style="color:#F0EDE6">The joy and power of Risograph: Risotto showcases 400 printed postcards from artists across the globe</a>
     </h2>
     <p class="summary">Print and design studio Risotto is marking 100 months of artist postcards, all printed by hand and posted worldwide, with an exhibition that puts the beauty and breadth of Risograph on show.</p>
     <a class="cta" href="https://www.itsnicethat.com/features/risotto-riso-club-graphic-design-spotlight-080426" target="_blank" rel="noopener" style="color:#C8372D">Read →</a>
   </div>
 </section>
-<section class="spread s-midnight" style="background:#0C0C0C;color:#F0EDE6">
+<section class="spread s-midnight has-image" style="color:#F0EDE6">
+  <div class="img-bg" style="background-image:url('https://admin.itsnicethat.com/images/oYczh1R0g8lCFIMjMItA12_yj4s=/277040/width-1440/Digitalweb_undefinedtomato_2026.jpg')"></div>
+  <div class="img-overlay"></div>
   <div class="inner">
     <div class="meta">
       <span class="num" style="color:#D4A853">02</span>
@@ -169,105 +189,121 @@ body{font-family:'DM Sans',sans-serif;font-weight:300;background:#0C0C0C;color:#
     <a class="cta" href="https://www.itsnicethat.com/articles/nao-lee-graphic-design-discover-160426" target="_blank" rel="noopener" style="color:#D4A853">Read →</a>
   </div>
 </section>
-<section class="spread s-cobalt" style="background:#1E2B4A;color:#FFFFFF">
+<section class="spread s-cobalt has-image" style="color:#F0EDE6">
+  <div class="img-bg" style="background-image:url('https://admin.itsnicethat.com/images/NnqMk6usmFNNXSZqTr7Wu81WSSM=/275436/width-1440/Jabon.MagicSoapsofMexico10.jpg')"></div>
+  <div class="img-overlay"></div>
   <div class="inner">
     <div class="meta">
       <span class="num" style="color:#F5C842">03</span>
       <span class="src">It&#x27;s Nice That</span>
     </div>
     <h2 class="title">
-      <a href="https://www.itsnicethat.com/articles/stephanie-mcardle-maisie-cousins-jabon-publication-project-080426" target="_blank" rel="noopener" style="color:#FFFFFF">This unique photobook is an unexpected trip through Mexico City’s witchcraft markets and magical soaps</a>
+      <a href="https://www.itsnicethat.com/articles/stephanie-mcardle-maisie-cousins-jabon-publication-project-080426" target="_blank" rel="noopener" style="color:#F0EDE6">This unique photobook is an unexpected trip through Mexico City’s witchcraft markets and magical soaps</a>
     </h2>
     <p class="summary">A visual archive of jabones esotéricos, (magic soaps) this publication bathes you in a world of liquid illustrations and saturated packaging designs.</p>
     <a class="cta" href="https://www.itsnicethat.com/articles/stephanie-mcardle-maisie-cousins-jabon-publication-project-080426" target="_blank" rel="noopener" style="color:#F5C842">Read →</a>
   </div>
 </section>
-<section class="spread s-paper" style="background:#F2EDE5;color:#111111">
+<section class="spread s-paper has-image" style="color:#F0EDE6">
+  <div class="img-bg" style="background-image:url('https://assets.fontsinuse.com/static/use-media-items/281/280592/upto-700xauto/69b619cf/Eps51_Portfolio_Staatsballett-Berlin_2.jpeg')"></div>
+  <div class="img-overlay"></div>
   <div class="inner">
     <div class="meta">
       <span class="num" style="color:#2B3A67">04</span>
       <span class="src">Fonts In Use</span>
     </div>
     <h2 class="title">
-      <a href="https://fontsinuse.com/uses/75105/staatsballett-berlin-2023" target="_blank" rel="noopener" style="color:#111111">Staatsballett Berlin (2023–)</a>
+      <a href="https://fontsinuse.com/uses/75105/staatsballett-berlin-2023" target="_blank" rel="noopener" style="color:#F0EDE6">Staatsballett Berlin (2023–)</a>
     </h2>
     <p class="summary">Contributed by Or Type Source:&amp;nbsp; eps51.com &amp;nbsp; Eps51 . License: All Rights Reserved . The visual identity for Staatsballett Berlin , designed by Eps51 , combines expressive typography with a restrained contemporary layout system. As one of Germany’s leading ballet companies, Staatsballett Berlin plays a central…</p>
     <a class="cta" href="https://fontsinuse.com/uses/75105/staatsballett-berlin-2023" target="_blank" rel="noopener" style="color:#2B3A67">Read →</a>
   </div>
 </section>
-<section class="spread s-dark-red" style="background:#1A1A1A;color:#E8E4DC">
+<section class="spread s-dark-red has-image" style="color:#F0EDE6">
+  <div class="img-bg" style="background-image:url('https://assets.fontsinuse.com/static/use-media-items/285/284482/upto-700xauto/69b61d5c/AshleyKinnardStudio_NewContemporaries2026_Publication_001.jpeg')"></div>
+  <div class="img-overlay"></div>
   <div class="inner">
     <div class="meta">
       <span class="num" style="color:#C8372D">05</span>
       <span class="src">Fonts In Use</span>
     </div>
     <h2 class="title">
-      <a href="https://fontsinuse.com/uses/75894/new-contemporaries-2026" target="_blank" rel="noopener" style="color:#E8E4DC">New Contemporaries 2026</a>
+      <a href="https://fontsinuse.com/uses/75894/new-contemporaries-2026" target="_blank" rel="noopener" style="color:#F0EDE6">New Contemporaries 2026</a>
     </h2>
     <p class="summary">Contributed by Ashley Kinnard Studio Source:&amp;nbsp; ashleykinnard.com &amp;nbsp; Photo:&amp;nbsp; Ashley Kinnard Studio . License: All Rights Reserved . The publication New Contemporaries 2026 was conceived as a continuation of the eponymous exhibition at South London Gallery rather than a record of it. Structured as an A–Z,…</p>
     <a class="cta" href="https://fontsinuse.com/uses/75894/new-contemporaries-2026" target="_blank" rel="noopener" style="color:#C8372D">Read →</a>
   </div>
 </section>
-<section class="spread s-cream" style="background:#FDFAF4;color:#0C0C0C">
+<section class="spread s-cream has-image" style="color:#F0EDE6">
+  <div class="img-bg" style="background-image:url('https://static.dezeen.com/uploads/2026/04/capsule-plaza-news_dezeen_2364_col_99_dezeen_2364_col_0.jpg')"></div>
+  <div class="img-overlay"></div>
   <div class="inner">
     <div class="meta">
       <span class="num" style="color:#1E2B4A">06</span>
       <span class="src">Dezeen</span>
     </div>
     <h2 class="title">
-      <a href="https://www.dezeen.com/2026/04/17/capsule-non-payment-allegations/" target="_blank" rel="noopener" style="color:#0C0C0C">Design platform Capsule accused of not paying &quot;dozens&quot; of contributors</a>
+      <a href="https://www.dezeen.com/2026/04/17/capsule-non-payment-allegations/" target="_blank" rel="noopener" style="color:#F0EDE6">Design platform Capsule accused of not paying &quot;dozens&quot; of contributors</a>
     </h2>
-    <p class="summary">As Capsule magazine prepares to host the fourth edition of its popular Capsule Plaza exhibition at Milan design week, a chorus of previous collaborators has accused the company of a pattern of non-payment. Twelve former contributors, including key associates, designers, photographers and production crew, have told…</p>
+    <p class="summary">As Capsule magazine prepares to host the fourth edition of its popular Capsule Plaza exhibition at Milan design week , a chorus of previous collaborators has accused the company of a pattern of non-payment. Twelve former contributors, including key associates, designers, photographers and production crew, have told…</p>
     <a class="cta" href="https://www.dezeen.com/2026/04/17/capsule-non-payment-allegations/" target="_blank" rel="noopener" style="color:#1E2B4A">Read →</a>
   </div>
 </section>
-<section class="spread s-linen" style="background:#E5D9C8;color:#111111">
+<section class="spread s-linen has-image" style="color:#F0EDE6">
+  <div class="img-bg" style="background-image:url('https://assets.fontsinuse.com/static/use-media-items/223/222635/upto-700xauto/69b5d530/433833676_18343634050098498_5361493327258249334_n.jpeg')"></div>
+  <div class="img-overlay"></div>
   <div class="inner">
     <div class="meta">
       <span class="num" style="color:#4A7C59">07</span>
       <span class="src">Fonts In Use</span>
     </div>
     <h2 class="title">
-      <a href="https://fontsinuse.com/uses/60457/pink-chilli-in-a-bowl-book-and-website" target="_blank" rel="noopener" style="color:#111111">Pink Chilli in a Bowl book and website</a>
+      <a href="https://fontsinuse.com/uses/60457/pink-chilli-in-a-bowl-book-and-website" target="_blank" rel="noopener" style="color:#F0EDE6">Pink Chilli in a Bowl book and website</a>
     </h2>
     <p class="summary">Contributed by Swiss Typefaces Source:&amp;nbsp; practicetheory.com.sg &amp;nbsp; ©Daryl Tan . License: All Rights Reserved . Published in 2024, Pink Chilli in a Bowl is a book co-written by Manuel and Isabelle Der Hagopian, archiving views, places and local cuisine of Singapore in the form of photographs, addresses or…</p>
     <a class="cta" href="https://fontsinuse.com/uses/60457/pink-chilli-in-a-bowl-book-and-website" target="_blank" rel="noopener" style="color:#4A7C59">Read →</a>
   </div>
 </section>
-<section class="spread s-noir" style="background:#080808;color:#F5F0E8">
+<section class="spread s-noir has-image" style="color:#F0EDE6">
+  <div class="img-bg" style="background-image:url('https://static.dezeen.com/uploads/2026/04/media-modernity-exhibition-yale-2026_dezeen_2364_sq.jpg')"></div>
+  <div class="img-overlay"></div>
   <div class="inner">
     <div class="meta">
       <span class="num" style="color:#D4A853">08</span>
       <span class="src">Dezeen</span>
     </div>
     <h2 class="title">
-      <a href="https://www.dezeen.com/2026/04/17/agency-agency-media-modernity-seminar-princeton/" target="_blank" rel="noopener" style="color:#F5F0E8">Exhibition marks 25 years of &quot;incredible&quot; Princeton Media + Modernity seminar</a>
+      <a href="https://www.dezeen.com/2026/04/17/agency-agency-media-modernity-seminar-princeton/" target="_blank" rel="noopener" style="color:#F0EDE6">Exhibition marks 25 years of &quot;incredible&quot; Princeton Media + Modernity seminar</a>
     </h2>
     <p class="summary">An exhibition highlighting the 25th anniversary of the Program of Media + Modernity seminar at Princeton University has been installed at the architecture school there, with a silver fabric curtain displaying the seminar posters over the years. Curated by a scholar and long-time director of the programme, Beatriz…</p>
     <a class="cta" href="https://www.dezeen.com/2026/04/17/agency-agency-media-modernity-seminar-princeton/" target="_blank" rel="noopener" style="color:#D4A853">Read →</a>
   </div>
 </section>
-<section class="spread s-parchment" style="background:#F7F3EE;color:#111111">
+<section class="spread s-parchment has-image" style="color:#F0EDE6">
+  <div class="img-bg" style="background-image:url('https://static.dezeen.com/uploads/2026/04/desperado-waco-surf-texas-icon-firmah-architecture_dezeen_2364_sq-1.jpg')"></div>
+  <div class="img-overlay"></div>
   <div class="inner">
     <div class="meta">
       <span class="num" style="color:#8B4513">09</span>
       <span class="src">Dezeen</span>
     </div>
     <h2 class="title">
-      <a href="https://www.dezeen.com/2026/04/16/icon-firmah-architecture-waco-surf-desperado-texas/" target="_blank" rel="noopener" style="color:#111111">ICON to 3D-print housing for artificial surf community in Texas</a>
+      <a href="https://www.dezeen.com/2026/04/16/icon-firmah-architecture-waco-surf-desperado-texas/" target="_blank" rel="noopener" style="color:#F0EDE6">ICON to 3D-print housing for artificial surf community in Texas</a>
     </h2>
-    <p class="summary">Construction company ICON and design studio Firmah Architecture have released designs for a 450-acre community in Texas, USA that will include 88 3D-printed houses surrounding two artificial surf lagoons. The Desperado community will be an extension of the water park Waco Surf located in Waco, where &quot;residents will be…</p>
+    <p class="summary">Construction company ICON and design studio Firmah Architecture have released designs for a 450-acre community in Texas , USA that will include 88 3D-printed houses surrounding two artificial surf lagoons. The Desperado community will be an extension of the water park Waco Surf located in Waco, where &quot;residents will…</p>
     <a class="cta" href="https://www.dezeen.com/2026/04/16/icon-firmah-architecture-waco-surf-desperado-texas/" target="_blank" rel="noopener" style="color:#8B4513">Read →</a>
   </div>
 </section>
-<section class="spread s-forest" style="background:#1E3A2F;color:#F5F0E8">
+<section class="spread s-forest has-image" style="color:#F0EDE6">
+  <div class="img-bg" style="background-image:url('https://bpando.org/wp-content/uploads/sooki-the-collected-works-branding-identity-logo-wordmark-typography-bpo-review-packaging-1-1024x576.png')"></div>
+  <div class="img-overlay"></div>
   <div class="inner">
     <div class="meta">
       <span class="num" style="color:#E8D5A3">10</span>
       <span class="src">BP&amp;O</span>
     </div>
     <h2 class="title">
-      <a href="https://bpando.org/2026/04/16/like-so-retro-but-so-the-future/" target="_blank" rel="noopener" style="color:#F5F0E8">Like, so retro, but so the future</a>
+      <a href="https://bpando.org/2026/04/16/like-so-retro-but-so-the-future/" target="_blank" rel="noopener" style="color:#F0EDE6">Like, so retro, but so the future</a>
     </h2>
     <p class="summary">There’s really so little not to love about this branding for Sooki – in fact, I’d go as far as saying there’s nothing not to love. It’s purely, and simply, gorgeous; every goddam inch of it. Kudos, then, to The Collected Works, the New York City- and New Orleans-based independent design studio behind the identity…</p>
     <a class="cta" href="https://bpando.org/2026/04/16/like-so-retro-but-so-the-future/" target="_blank" rel="noopener" style="color:#E8D5A3">Read →</a>
